@@ -81,6 +81,10 @@ function Home() {
 
   return (
     <div>
+      <div style={{ textAlign: 'center', marginBottom: '20px', color: '#6c757d' }}>
+        <h2>Welcome to Notes App</h2>
+        <p>Here you can create, edit, and organize your notes effortlessly.</p>
+      </div>
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2>My Notes</h2>
         <Button variant="primary" onClick={() => handleShow()}>
