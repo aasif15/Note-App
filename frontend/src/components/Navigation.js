@@ -13,9 +13,16 @@ function Navigation() {
   };
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg" className="shadow-lg">
       <Container>
-        <Navbar.Brand as={Link} to="/">Notes App</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
+          <img 
+            src="/teamLogo.jpg"
+            alt="Team Logo" 
+            style={{ width: '60px', height: '60px', marginRight: '10px', borderRadius: '8px' }}
+          />
+          <span style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Notes App</span>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -23,8 +30,8 @@ function Navigation() {
               <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
             ) : (
               <>
-                <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                <Nav.Link as={Link} to="/register">Register</Nav.Link>
+                <Nav.Link as={Link} to="/login" style={{ color: '#adb5bd' }}>Login</Nav.Link>
+                <Nav.Link as={Link} to="/register" style={{ color: '#adb5bd' }}>Register</Nav.Link>
               </>
             )}
           </Nav>

@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
+import Footer from './components/Footer';
 import { AuthProvider } from './context/AuthContext';
 import PrivateRoute from './components/PrivateRoute';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,6 +28,7 @@ function App() {
             />
           </Routes>
         </div>
+        <Footer />
       </Router>
     </AuthProvider>
   );
